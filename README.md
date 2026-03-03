@@ -7,8 +7,6 @@
 
 > 本项目为 **Ring Hyacinth 与 Simon Lee 的共同项目（co-created project）**。
 
-![Star Office UI 预览](docs/screenshots/office-preview-20260301.jpg)
-
 ---
 
 ## 这是个什么项目？（一句话）
@@ -247,7 +245,8 @@ A pixel office dashboard for multi-agent collaboration: visualize your AI assist
 
 > This project is a **co-created work by Ring Hyacinth and Simon Lee**.
 
-![Star Office UI Preview](docs/screenshots/office-preview-20260301.jpg)
+![Star Office UI Cover 1](docs/screenshots/readme-cover-1.jpg)
+![Star Office UI Cover 2](docs/screenshots/readme-cover-2.jpg)
 
 ---
 
