@@ -284,14 +284,14 @@
         }
         .asset-item.active { border-color: #22c55e; box-shadow: 0 0 0 1px #22c55e inset; }
         .asset-vis-btn {
-            min-width: 40px;
+            min-width: 34px;
             height: 28px;
-            padding: 4px 6px;
+            padding: 2px 4px;
             border: 1px solid #4b5563;
             background: #111827;
             color: #d1d5db;
             border-radius: 6px;
-            font-size: 11px;
+            font-size: 14px;
             cursor: pointer;
             font-family:'ArkPixel', monospace;
         }
@@ -2289,15 +2289,14 @@
                 const displayName = getAssetDisplayName(it.path || '');
                 const thumbId = `asset-thumb-canvas-${(it.path || '').replace(/[^a-zA-Z0-9]/g, '_')}`;
                 const hidden = isAssetHidden(it.path);
-                const visEmoji = hidden ? '🙈' : '👁';
-                const visText = hidden ? t('assetShow') : t('assetHide');
+                const visEmoji = hidden ? '🙈' : '👀';
                 return `<div class="asset-item ${isActive ? 'active' : ''}" data-path="${it.path}" onclick="selectAssetInDrawer('${(it.path || '').replace(/'/g, "\\'")}')">
                     <canvas id="${thumbId}" class="asset-thumb" width="56" height="56"></canvas>
                     <div class="asset-meta">
                         <div class="asset-path">${it.path}</div>
                         <div class="asset-sub">${displayName} ｜ ${reso}${hidden ? ' ｜ 已隐藏' : ''}</div>
                     </div>
-                    <button class="asset-vis-btn" onclick="toggleAssetVisibility('${(it.path || '').replace(/'/g, "\\'")}', event)">${visEmoji} ${visText}</button>
+                    <button class="asset-vis-btn" onclick="toggleAssetVisibility('${(it.path || '').replace(/'/g, "\\'")}', event)">${visEmoji}</button>
                 </div>`;
             }).join('');
 
